@@ -1,0 +1,102 @@
+﻿Using Git
+
+
+
+
+
+A. Learn to Use the Terminal
+
+cd: change your working directory
+
+pwd: present working directory
+
+.: means your current directory
+
+..: means one parent directory above your current directory
+
+ls: list files/folders in directory
+
+mkdir: make a directory
+
+rm: remove a file
+
+cp: copy a file
+
+mv: move or rename a file
+
+git --version : Check that git is a recognized command
+
+python -i : check that python is a recognized command
+
+open your operating system’s file explorer
+Mac: open .
+Windows: explorer .
+
+javac : java compile
+
+java : run javafile
+
+
+
+
+
+B. Intro to Version Control Systems
+
+Git it a distributed version control system as opposed to a centralized version control system. 
+
+We call the entire history of an entire project a “repository”.
+
+
+
+
+
+C. Local Repositories (Narrative Introduction)
+
+git init : Creates a box in which to permanently store panoramic pictures.
+
+git add : store everything in the repository
+
+git commit -m : stores a snapshot of all added files (i.e. current tofu recipes) into the repository.
+                 -m command lets us add a message to the commit
+
+git status
+
+git log : see evidence of our snapshot
+
+git show : peek inside of this commit.
+
+git checkout : roll back our files
+
+Undoing Changes
+
+git reset HEAD [file] : Unstage a file that you haven’t yet committed
+                        This will take the file’s status back to modified, leaving changes intact.
+                        Don’t worry about this command undoing any work.
+                        This command is the equivalent of deleting one of the temporary images that you’re going to combine into a panorama.
+
+
+
+
+
+
+
+D. Remote Repositories
+
+git show-ref
+
+git clone [remote-repo-URL]
+    Makes a copy of the specified repository, but on your local computer.
+    Also creates a working directory that has files arranged exactly like the most recent snapshot in the download repository. 
+    Also records the URL of the remote repository for subsequent network data transfers, and gives it the special remote-repo-name “origin”.
+
+git remote add [remote-repo-name] [remote-repo-URL]
+    Records a new location for network data transfers.
+
+git remote -v
+    Lists all locations for network data transfers.
+
+git pull [remote-repo-name] master:
+    Get the most recent copy of the files as seen in remote-repo-name
+
+git push [remote-repo-name] master:
+    Pushes the most recent copy of your files to the remote-repo-name.
